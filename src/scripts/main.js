@@ -68,7 +68,7 @@ const thirdPromise = new Promise((resolve) => {
 
 firstPromise
   .then((textMessage) => createMessage(textMessage))
-  .catch((textMessage) => createMessage(textMessage, 'error'));
+  .catch((textMessage) => createMessage(textMessage));
 
 secondPromise.then((textMessage) => createMessage(textMessage));
 
